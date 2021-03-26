@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="84529360-df78-44be-9159-18e9001482a4" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/themes/3-hexo/layout/在此index.md配置首页.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/3-hexo/source/img/497147edc274d2c1743a2626be244a7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/3-hexo/source/img/jqiange.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/3-hexo/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/3-hexo/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/3-hexo/layout/indexs.md" beforeDir="false" afterPath="$PROJECT_DIR$/themes/3-hexo/layout/indexs.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/3-hexo" />
+  </component>
+  <component name="ProjectId" id="1XhUgJYwPqCc85CeF2mEx75Nd3G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/python_work" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Hexo\node_modules\hexo-generator-index\lib" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84529360-df78-44be-9159-18e9001482a4" name="默认更改列表" comment="" />
+      <created>1581497930626</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581497930626</updated>
+      <workItem from="1581497936560" duration="6264000" />
+      <workItem from="1581510663644" duration="15242000" />
+      <workItem from="1581592516564" duration="1229000" />
+      <workItem from="1581757942242" duration="32000" />
+      <workItem from="1581785140638" duration="5018000" />
+      <workItem from="1581790540708" duration="29000" />
+      <workItem from="1581826233901" duration="13033000" />
+      <workItem from="1581905829391" duration="1422000" />
+      <workItem from="1581958141383" duration="6695000" />
+      <workItem from="1583823097798" duration="2927000" />
+      <workItem from="1584113669577" duration="2125000" />
+      <workItem from="1584115892688" duration="56000" />
+      <workItem from="1584163984563" duration="88000" />
+      <workItem from="1584165937909" duration="338000" />
+      <workItem from="1590933394081" duration="1935000" />
+      <workItem from="1591308642307" duration="618000" />
+      <workItem from="1591539369439" duration="2250000" />
+      <workItem from="1592661204079" duration="1012000" />
+      <workItem from="1592898691668" duration="4348000" />
+      <workItem from="1592904155503" duration="7000" />
+      <workItem from="1616767963380" duration="609000" />
+      <workItem from="1616769120065" duration="45000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="597" y="220" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584115019331">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="597" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1584115019331" />
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1591330474687">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1591330474687" />
+  </component>
+</project>
