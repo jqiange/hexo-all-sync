@@ -32,7 +32,7 @@ Selenium具体怎么就能操纵浏览器呢？这要归功于 **浏览器驱动
 
 3. 将下载好的浏览器驱动解压，将解压出的 `exe` 文件放到Python的安装目录下，也就是和`python.exe`同目录即可。
 
-   ![](/assets/1560611571791.png)
+   ![](https://image--1.oss-cn-shenzhen.aliyuncs.com/1560611571791.png)
 
 配置完这一切，就能使用python程序控制浏览器啦！
 
@@ -77,7 +77,7 @@ cilck_button=browser.find_element_by_css_selector('#search button.button').click
 //注意这里先找到button标签下属性为button的类名，在往上找到其独一无二的id'search'。
 ```
 
-![](/assets/Snipaste_2020-02-29_23-06-26.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-29_23-06-26.png)
 
 ### 2.2.2 Xpath选择器
 

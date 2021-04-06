@@ -24,7 +24,7 @@ Linux，全称GNU/Linux，是一套免费使用和自由传播的类Unix操作�
 
 **类Unix系统目录结构**
 
-![](/assets/image-20201023215641344.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201023215641344.png)
 
 以上这个目录结构要牢记。
 
@@ -122,6 +122,8 @@ man是linux中的用户手册，包含的各个section意义如下：
 
 - `cat 文件名` 查看文件里的所有内容，可同时显示多个文件内容
 
+  `cat > 文件名` 新建文件，并在换行后继续输入，将输入内容写进文件中，ctrl + d 结束输入
+
 - `more 文件名` 滑动逐次查看内容（按Enter键滑动阅览，f键前翻页，b键后翻页，q键结束）
 
   `head 文件名` 查看前10行
@@ -129,6 +131,8 @@ man是linux中的用户手册，包含的各个section意义如下：
   `tail 文件名` 查看后10行 
 
   `tail -f xx.log`动态查看（适用于log在随时更新的情况）
+
+  `tail -50f xx.log`动态查看后50行
 
   整齐输出(表格化输出)：`column -t`
 
@@ -164,7 +168,9 @@ cat 1.txt 2.txt > xxx.txt  #把1.txt和2.txt内容合并到xxx.txt里
 
 ## 1.7 管道
 
-![](/assets/image-20200618135249035.png)
+
+
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200618135249035.png)
 
 以上的意思是ls -alh显示所有文件，将文件放到管道里，再调用more命令滑动逐次查看内容。
 
@@ -192,9 +198,13 @@ ln 1.txt 1-hardlink.txt       #给1.txt创建硬链接1-hardlink.txt
 grep 'ntfs' xx.txt     #在xx.txt里查找‘ntfs’
 grep '^ntfs' xx.txt     #在xx.txt里查找开头为‘ntfs’的字符串
 
-grep -v 'ntfs' xx.txt  #-v作用是取反，不包含‘ntfs’
+grep -v 'ntfs' xx.txt  # -v作用是取反，不包含‘ntfs’
 
-grep -n 'ntfs' xx.txt  #-n作用是显示行数
+grep -n 'ntfs' xx.txt  # -n作用是显示行数
+
+grep -r 'internal_crop_0810.oas' ./   # 以递归的方式查找当前路径及子目录文件里指定的字符串
+
+grep -i 'end process' test.py         # -i 是忽略查找字符的大小写
 ```
 
 ### 1.9.2 文件查找
@@ -227,7 +237,12 @@ find ./ -not -name 'plot*'  #取反，不包含
 sudo find / -name *redis* -exec rm -rf {} \;  #查找根目录下所有包含redis的文件并删除
 ```
 
+### 1.9.3 替换
 
+```
+sed -i s#需要替换的字段#新的字段#g 指定替换的文件
+如：sed -i s#./prep#/home/prep#g ./*/*.log
+```
 
 ## 1.10 移动与拷贝
 
@@ -245,7 +260,9 @@ cp 1.txt /laowang  #复制文件1.txt到laowang文件夹里
 
 `tar [参数] 打包文件名 需要打包的文件`
 
-![](/assets/image-20200618153443295.png)
+
+
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200618153443295.png)
 
 ```
 tar -cvf test.tar *.py   #将所有py文件打包成test.tar
@@ -293,7 +310,9 @@ whoami   #显示当前的账户名（用户名）
 vi 1.py   #创建1.py并进入编辑模式
 ```
 
-命令与模式转换：![](/assets/image-20200619104223301.png)
+命令与模式转换：
+
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200619104223301.png)
 
 由命令模式进入编辑模式时：a命令在光标后面插入编辑，A命令在行末编辑，O命令在光标上一行插入，o命令在光标下一行编辑……。
 
@@ -368,10 +387,13 @@ data > xx.txt        #把显示的日期写到xx.txt文件里
 
 `ps [选项]`
 
-![](/assets/image-20200618164306567.png)
+
+
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200618164306567.png)
 
 ```
-ps -aux  #查看当前时刻的进程消息
+ps -aux  #查看当前时刻的所有进程消息
+ps -uf
 top      #查看进程消息,持续动态存在
 htop  
 kill [PID]  #以指定PID方式终止对应的进程
@@ -455,10 +477,11 @@ chown xxx 1.py  #切换1.py到xxx用户
 
 ### 2.6.3 权限
 
-![](/assets/image-20200618231136063.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200618231136063.png)
 
 ```
 chmod u=rwx 1.py   #修改文件owner的权限
+chmod +x 1.py      #给ower加执行（x）的权限
 ```
 
 `g=r-x ` 用户组
@@ -584,7 +607,9 @@ sudo apt install python3.7
 
 linux在正常启动时，先会启动一系列配置文件，再显示命令行提示符：
 
-![](/assets/image-20210106233834424.png)
+
+
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20210106233834424.png)
 
 在用户目录下的 `~/.bashrc`中配置环境变量：
 
@@ -604,7 +629,7 @@ export PATH=/home/uusama/mysql/bin：$PATH   （二者表达意思一样）
 
 `$PATH` 是指PATH这个环境变量，$符号就是表示PATH是个变量，$PATH代表了PATH路径下所有的变量，可能在其他配置文件配置了PATH=/etc/pangen/bin等多个路径，$PATH可将这些一并加载过来。
 
-冒号`:` 是分割符的意思，意思是PATH环境变量不仅包含了$PATH代表的其他路径下的命令，还加上/home/uusama/mysql/bin，与win平台的分号作用类似，表示并列。
+**冒号`:` 是分割符的意思**，意思是PATH环境变量不仅包含了$PATH代表的其他路径下的命令，还加上/home/uusama/mysql/bin，与win平台的分号作用类似，**表示并列**。
 
 如果只是`export PATH=/home/uusama/mysql/bin`那么`PATH`只会指向`/home/uusama/mysql/bin`这个路径，覆盖了其他的指向。
 
@@ -687,4 +712,118 @@ alias rm='rm -irf'
 ```
 
 这样每次使用`rm`命令时，就代表使用了`rm -irf`
+
+# 5. Shell 语句
+
+所谓的shell命令语句，就是linux下命令行里输入命令的集合。
+
+比如：新建一个shell命令文件：touch run.sh (shell文件以.sh为后缀)
+
+写入以下内容：
+
+```
+cd /home/test_work
+touch test1.py
+```
+
+执行run.sh：`sh run.sh`
+
+就是相当于命令行里执行了上两句命令。
+
+但是，shell语句肯定没有这么简单，包含更多的功能。
+
+## 5.1 字符串的定义，引号，等于号
+
+```
+#！ /bin/bash
+filepath=/home/test_work
+filepath=“/home/test_work”   #这两种表达的意思是一样的
+```
+
+在shell里面，字符串不需要引号标识，引号可要可不要。
+
+但是，双引号（“”），单引号（‘’），尖角号（``）三种符号的内容不一样：
+
+双引号：阻止shell对大多数特殊字符（例如#）进行解释，但是$，`，“仍然保持其特殊含义。
+
+单引号：阻止shell对所有字符进行解释。
+
+尖角号：这个符号通常位于键盘Esc键的下方。当用尖角号括起来一个shell命令时，代表执行这个命令，并将执行的结果返回给赋给的变量。
+
+等于号（=）：也是赋值作用，注意它前后不能有空格（空格在shell里面是有隔断作用的，表示前命令的结束）。
+
+## 5.2 变量及$符号
+
+在BASH中，$符号用于对变量进行解析，相当于取值的作用。例如
+
+```
+#！ /bin/bash
+filepath=/home/test_work
+echo $filepath
+```
+
+通过sh运行这个脚本，就会打印输出/home/test_work。
+
+echo 是打印输出的意思，$filepath 是对filepath这个变量取值。
+
+### 位置变量
+
+所谓的位置变量，就是在运行程序时，对所传入的参数进行取值。例子如下：
+
+新建一个.sh文件，test.sh，写入：
+
+```
+filepath=/home/test_work
+echo $0
+echo $1
+echo $2
+echo $3
+```
+
+运行此程序：
+
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20210406110909691.png" style="zoom:80%;" align='left'/>
+
+由此可见，
+
+$0代表文件名
+
+$1代表传入的第1个参数
+
+$2代表传入的第2个参数
+
+另外，shell还有另外三个位置变量：
+
+- $* 所有传入的参数列表
+- $@ 所有传入的参数列表，同上
+- $# 传入参数的个数
+
+示例：
+
+```
+filepath=/home/test_work
+echo $*
+echo $@
+echo $#
+```
+
+运行结果：
+
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20210406112941373.png" style="zoom:100%;" align='left'/>
+
+## 5.3 一些shell脚本中常用的命令
+
+### 5.3.1 cat
+
+```
+# run.sh
+cat > pframe.py << EOF
+import numpy as np
+a=np.array([1,2,3,4])
+EOF
+```
+
+这里的意思是：
+
+cat 新建一个文件pframe.py，并写入两个EOF标识符之间的字符。（EOF作为标识符不是固定的，也可以用其他字母代替）
 

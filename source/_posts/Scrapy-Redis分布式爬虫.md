@@ -26,7 +26,7 @@ Scrapy_redis 在scrapy 的基础上实现了更多，更强大的功能，具体
 
 正常的 Scrapy 单机爬虫：
 
-<img src="/assets/1563094178551.png" style="zoom:150%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/1563094178551.png" style="zoom:150%;" />
 
 Scrapy并不会共享调度队列，也就是说Scrapy是不支持分布式的。为了支持分布式，我们需要让Scrapy支持共享调度队列，也就是改造成共享调度和去重的功能。
 
@@ -40,7 +40,7 @@ Scrapy并不会共享调度队列，也就是说Scrapy是不支持分布式的�
 
 
 
-<img src="/assets/1563094209564.png" style="zoom:150%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/1563094209564.png" style="zoom:150%;" />
 
 使用Redis服务器来集中处理所有的请求，主要负责请求的去重和调度。通过这种方式，所有电脑端的爬虫共享了一个爬取队列，并且每个电脑端每次得到的请求都是其他爬虫未曾访问的。从而提高了爬虫效率。
 

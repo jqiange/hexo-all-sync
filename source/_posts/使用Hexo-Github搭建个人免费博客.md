@@ -36,7 +36,7 @@ categories: 工具
 > `$ cd /f/Workspaces/hexo/`  
 > `$ hexo init`
 > 初始化完成之后打开所在的文件夹可以看到以下文件： 
-![](%E4%BD%BF%E7%94%A8Hexo-Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2_md_files/hexo-init.png?v=1&type=image)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/hexo-init.png)
 > 其中：
 >  node_modules：是依赖包 
 > public：存放的是生成的html页面 ,这些文件将来都是要提交到github去的
@@ -72,7 +72,9 @@ categories: 工具
     ssh-keygen -t rsa -C "邮件地址"
 
  然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到`.ssh\id_rsa.pub`文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -> SSH and GPG keys -> New SSH key：
- ![](%E4%BD%BF%E7%94%A8Hexo-Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2_md_files/2.png?v=1&type=image)
+
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/dshsfhsdjfhs2w3442.png) 
+
 ## 3.1 测试是否成功
 
     $ ssh -T git@github.com # 注意邮箱地址不用改
@@ -95,7 +97,7 @@ categories: 工具
 [http://blog.liuxianan.com/windows-port-bind.html](http://blog.liuxianan.com/windows-port-bind.html)
 
 第一次初始化的时候hexo已经帮我们写了一篇名为 Hello World 的文章，默认的主题比较丑，打开时就是这个样子：
-![](%E4%BD%BF%E7%94%A8Hexo-Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2_md_files/3.png?v=1&type=image)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/qweqw eqweqw3432423432.png)
 
 ## 4.2 修改主题
 既然默认主题很丑，那我们别的不做，首先来替换一个好看点的主题。这是 [官方主题](https://hexo.io/themes/)。
@@ -107,7 +109,9 @@ categories: 工具
     $ cd /f/Workspaces/hexo/
     $ git clone https://github.com/yelog/hexo-theme-3-hexo.git themes/3-hexo
 下载后的主题都在这里：
-![](%E4%BD%BF%E7%94%A8Hexo-Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2_md_files/4.png?v=1&type=image)
+
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/wqeqwewqewqe342342342.png)
+
 修改项目根目录下`_config.yml`中的`theme: landscape`改为theme: 3-hexo，然后重新执行`hexo g`来重新生成。
 
 当然模板是作者提供的，可根据自己的喜好修改themes/3-hexo/_config.yml里面的内容
@@ -140,8 +144,11 @@ categories: 工具
 部署这个命令一定要用git bash，否则会提示`Permission denied (publickey).`
 ## 4.3 保留CNAME、README.md等文件
 提交之后网页上一看，发现以前其它代码都没了，此时不要慌，一些非md文件可以把他们放到source文件夹下，这里的所有文件都会原样复制（除了md文件）到public目录的：
-![](%E4%BD%BF%E7%94%A8Hexo-Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2_md_files/5.png?v=1&type=image)
+
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/wewrwervwv54523v32w.png)
+
 由于hexo默认会把所有md文件都转换成html，包括README.md，所有需要每次生成之后、上传之前，手动将README.md复制到public目录，并删除README.html。
+
 # 5 常用hexo命令
 常见命令：
 

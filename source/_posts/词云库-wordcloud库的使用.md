@@ -9,19 +9,19 @@ typora-root-url: ..
 
 ### 基础用法：
 
-![](/assets/01.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/01.png)
 
 ------
 
-![](/assets/1.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/1.png)
 
 ------
 
-![](/assets/2.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/2.png)
 
 ------
 
-![](/assets/3.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/3.png)
 
 ------
 
@@ -29,14 +29,14 @@ typora-root-url: ..
 
 **1. 对英文进行词云统计**：
 
-![](/assets/4.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/4.png)
 
 注意：
 
-![](/assets/5.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/5.png)
 
 ------
 
 **2. 对英文进行词云统计**：
 
-![](/assets/6.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/6.png)

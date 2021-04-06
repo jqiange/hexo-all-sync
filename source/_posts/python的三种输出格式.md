@@ -45,7 +45,7 @@ hello,zs
 
 **常见占位符：**
 
-![](/assets/obytmcy9FdS91eEl3PT0.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/obytmcy9FdS91eEl3PT0.png)
 
 **为输出设置限制条件：**
 
@@ -56,7 +56,7 @@ hello,zs
 
 **下面补充一些相关知识：转义符** 
 
-<img src="/assets/kVrcUZTQzRBPT0.png" style="zoom: 80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/kVrcUZTQzRBPT0.png" style="zoom: 80%;" />
 
 # 格式化输出
 

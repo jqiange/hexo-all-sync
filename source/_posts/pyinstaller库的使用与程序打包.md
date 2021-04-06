@@ -10,7 +10,7 @@ typora-root-url: ..
 
 > **作用：**是第三方库，将py源码转换成无需源码的可执行文件（.exe，等）
 
-![](/assets/0.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/0.png)
 
 > **用法：**
 

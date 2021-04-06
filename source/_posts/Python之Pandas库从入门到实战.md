@@ -887,11 +887,11 @@ MultiIndex([(  'one', 'a'),
 
 ### 6.1.2 总结
 
-![](/assets/Snipaste_2020-02-17_17-25-29.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-17_17-25-29.png)
 
 **包含的参数**
 
-![先看着，有空再改清晰点](/assets/Snipaste_2020-02-17_17-25-51.png)
+![先看着，有空再改清晰点](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-17_17-25-51.png)
 
 ### 6.1.3 大文件分块读取
 
@@ -1134,15 +1134,15 @@ Categories (4, interval[float64]): [(1.912, 24.0] < (24.0, 46.0] < (46.0, 68.0] 
 
 ### 6.4.1 字符串方法
 
-![](/assets/Snipaste_2020-02-18_21-39-52.jpg)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-18_21-39-52.jpg)
 
 
 
-![Snipaste_2020-02-18_21-40-11](/assets/Snipaste_2020-02-18_21-40-11.jpg)
+![Snipaste_2020-02-18_21-40-11](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-18_21-40-11.jpg)
 
 ### 6.4.2 正则表达式方法
 
-![](/assets/Snipaste_2020-02-18_21-40-27.jpg)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-18_21-40-27.jpg)
 
 ### 6.4 pandas字符串方法
 
@@ -1173,7 +1173,7 @@ dtype: object
 
 **归纳如下：**
 
-![](/assets/Snipaste_2020-02-18_21-40-41.jpg)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-18_21-40-41.jpg)
 
 注意：以上判断字符串是否数字的函数，只能对整型数字进行判断，不能判断浮点类型数据。
 
@@ -1325,7 +1325,7 @@ two　0　3　4
 >>> pd.merge(left,right, how='left', on=['key1', 'key2'])
 ```
 
-![](/assets/Snipaste_2020-02-19_12-54-24.jpg)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-19_12-54-24.jpg)
 
 **处理重复列名：**
 
@@ -1339,7 +1339,7 @@ two　0　3　4
 >>> pd.merge(df1, df2, on='key', suffixes=('_left', '_right')) 
 ```
 
-<img src="/assets/Snipaste_2020-02-19_12-35-27.jpg" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-19_12-35-27.jpg" style="zoom:80%;" />
 
 
 
@@ -1372,13 +1372,13 @@ two　0　3　4
 >>> df.pivot('date','class','values')
 ```
 
-<img src="/assets/Snipaste_2020-02-19_14-27-54.jpg" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-19_14-27-54.jpg" style="zoom:80%;" />
 
 ## 6.6 数据聚合与分组
 
 **聚合的分组的含义：**
 
-<img src="/assets/Snipaste_2020-02-19_16-46-49.jpg" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-19_16-46-49.jpg" style="zoom:80%;" />
 
 **分组函数：`df.groupby()`**
 
@@ -1439,7 +1439,7 @@ orange
 >>> people.groupby(m,axis=1).sum()
 ```
 
-<img src="/assets/Snipaste_2020-02-19_18-02-02.jpg" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-19_18-02-02.jpg" style="zoom:80%;" />
 
 **通过函数进行分组**
 
@@ -1469,7 +1469,7 @@ orange 	yellow 	5.60
 >>> df.groupby('fruit',as_index=False)['price'].mean()    //返回DataFrame对象
 ```
 
-<img src="/assets/Snipaste_2020-02-19_17-44-18.jpg" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-19_17-44-18.jpg" style="zoom:80%;" />
 
 ```python
 >>> df
@@ -1533,7 +1533,7 @@ DatetimeIndex(['2011-01-02', '2011-01-05', '2011-01-07', '2011-01-08',
 >>> ts    //时间序列默认每天生成，periods=1000意思是生成1000天的时间
 ```
 
-<img src="/assets/Snipaste_2020-02-19_20-42-03.jpg" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-19_20-42-03.jpg" style="zoom:80%;" />
 
 
 
@@ -1546,7 +1546,7 @@ DatetimeIndex(['2011-01-02', '2011-01-05', '2011-01-07', '2011-01-08',
 >>> ts    //结果如下，这不同于切片，有的才赋值，没有就不管
 ```
 
-<img src="/assets/Snipaste_2020-02-19_21-03-48.jpg" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-19_21-03-48.jpg" style="zoom:80%;" />
 
 ```python
 >>> ts.truncate(after='1/9/2001')  //取1/9/2001（不包含）之前的数据
@@ -1590,7 +1590,7 @@ dtype: int64
 
 默认`freq='D'`，还支持以下偏移：
 
-<img src="/assets/Snipaste_2020-02-19_21-25-41.jpg" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-19_21-25-41.jpg" style="zoom:80%;" />
 
 举个例子：
 
@@ -1661,11 +1661,11 @@ DatetimeIndex(['2012-01-01 00:00:00', '2012-01-01 04:00:00',
 >>> frame.resample('D').asfreq()
 ```
 
-<img src="/assets/Snipaste_2020-02-19_22-16-14.jpg" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-19_22-16-14.jpg" style="zoom:80%;" />
 
 resample是一个灵活高效的方法，可用于处理非常大的时间序列。
 
-<img src="/assets/Snipaste_2020-02-19_22-19-23.jpg" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-19_22-19-23.jpg" style="zoom:80%;" />
 
 ## 7.3 应用案例
 
@@ -1674,14 +1674,14 @@ resample是一个灵活高效的方法，可用于处理非常大的时间序列
 >>> df.head()
 ```
 
-![](/assets/Snipaste_2020-02-19_22-24-10.jpg)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-19_22-24-10.jpg)
 
 ```python
 >>> df['timeStamp'] = pd.to_datetime(df['timeStamp'])   //转换成时间格式
 >>> df.set_index('timeStamp',inplace=True)  //设置其中一列为索引
 ```
 
-![](/assets/Snipaste_2020-02-19_22-29-37.jpg)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-19_22-29-37.jpg)
 
 # 8. 老师总结
 

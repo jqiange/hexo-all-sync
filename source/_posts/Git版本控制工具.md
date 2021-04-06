@@ -12,7 +12,7 @@ typora-root-url: ..
 
 首先你要知道git的工作流程：
 
-![](/assets/Snipaste_2020-05-17_23-09-34.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-05-17_23-09-34.png)
 
 # 实战操作
 
@@ -28,7 +28,7 @@ typora-root-url: ..
 
 暂存区和本地仓库就这个文件夹里面，`.git`里文件如下：
 
-![](/assets/image-20201028211359921.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201028211359921.png)
 
 ## 1.2 设置签名
 
@@ -89,6 +89,8 @@ typora-root-url: ..
 通过id回退：`git reset --hard commit_id`
 
 回退之后又想恢复到最新版本：`git reflog `查看每一次记录，通过id回退。
+
+`git reflog --date=iso`查看每次commit记录并显示时间。
 
 **git中的HEAD理解**：HEAD代表当前指针的意思，它是git内部用来追踪位置的，形象的记忆就是：你在哪，HEAD就指向哪。
 
@@ -167,7 +169,7 @@ settings—SSH keys—New SSH Keys
 
 这样本地就可以和远程GitHub进行通信了！
 
-![](/assets/image-20200620204431118.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200620204431118.png)
 
 ## 2.2 添加远程仓库
 
@@ -215,11 +217,11 @@ git pull origin master
 
 当远程是最新，发生冲突时，会以如下形式展示：
 
-<img src="/assets/image-20200621170043414.png" style="zoom: 80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200621170043414.png" style="zoom: 80%;" />
 
 当远程和本地都是最新，发生冲突时，会以如下形式展示：
 
-<img src="/assets/image-20200621171708361.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200621171708361.png" style="zoom:80%;" />
 
 当在本地把代码冲突解决了，才能重新本地commit。
 
@@ -227,13 +229,13 @@ git pull origin master
 
 代码下载：
 
-`git clone 远程仓库地址`这里仓库地址可为其他人的。
+`git clone 远程仓库地址` 这里仓库地址可为其他人的。
 
 
 
 `git branch -a`查看远程分支
 
-![](/assets/image-20200518211946104.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200518211946104.png)
 
 # 3、一篇文章理解git的工作原理
 

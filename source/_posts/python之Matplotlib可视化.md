@@ -50,7 +50,7 @@ plt.plot(x, y, 'xxx', label=, linewidth=, marker= )
 
 **线条样式linestyle**有实线，虚线，点线等，如`linestyle="--"`，linestyle=可以省略，具体表示方法如下：
 
-<img src="/assets/5-rwerweq%20ty11.png" style="zoom:100%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/5-rwerweq ty11.png" style="zoom:100%;" />
 
 **线条颜色color**表示方法有：color= `'r'`|	`'red'`	|`'#000100'`|	`(0.1, 0.5, 0.4)`，四种表示方法，其中前三种color=可以省略(color可以简写为c)。
 
@@ -144,7 +144,7 @@ plt.figure(figsize=(30,10))
 plt.show()   //有时可以省略
 ```
 
-<img src="/assets/int%20i78%209t%208r00dex.png"  style="zoom:120%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/int i78 9t 8r00dex.png"  style="zoom:120%;" />
 
 注意：对于有时候画图后不显示图，而需要show的时候，为了避免繁琐的show，可以在导入库之后加入一行代码`%matplotlib inline`就可以plot画图后直接输出图。
 
@@ -165,7 +165,7 @@ plt.subplot(224)                           //2行2列第4个图
 plt.plot(np.tan(np.arange(10)),c='g')
 ```
 
-![](/assets/subplot1.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/subplot1.png)
 
 **2) 也可以使用`fig,axs=plt.subplots(rows,cols,figsize=,*kwargs)`来绘制多个图形，可以指定行列数，画布大小。返回值是一个元组，其中的`fig`参数是`figure`对象，`axs`是`axes`对象的`array`。**
 
@@ -177,7 +177,7 @@ axes[1,0].plot(np.tan(np.arange(10)),c='y')
 axes[1,1].plot(np.arange(10),c='g')
 ```
 
-![](/assets/subplot2.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/subplot2.png)
 
 关于返回值，也可以这样接收：
 
@@ -211,7 +211,7 @@ plt.annotate('local max', xy=(2, 1), xytext= (3,1.5),
 plt.ylim(-2, 2)  //设置y轴的上下限
 ```
 
-![](/assets/inuitiotuttdex.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/inuitiotuttdex.png)
 
 ## 2.5 图片保存
 
@@ -272,7 +272,7 @@ plt.ylim(-2, 2)  //设置y轴的上下限
  plt.figure(dpi=80)
 ```
 
-<img src="/assets/inuyuytresdex.png" style="zoom:120%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/inuyuytresdex.png" style="zoom:120%;" />
 
 ## 3.2 横向条形图
 
@@ -352,7 +352,7 @@ movies = {
  plt.legend(bbox_to_anchor=(0.8,0.8),fontsize=20)  //指定图例的位置及字体大小
 ```
 
-![](/assets/indeqrwr%20rwq%20rqrq14421ex.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/indeqrwr rwq rqrq14421ex.png)
 
 第二种解法：
 
@@ -370,7 +370,7 @@ movies = {
  plt.legend(bbox_to_anchor=(0.8,0.8),fontsize=20)  
 ```
 
-![](/assets/induuuuuuuuuuuuex.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/induuuuuuuuuuuuex.png)
 
 ### 举个例子2
 
@@ -408,7 +408,7 @@ movies = {
 >>> plt.show()
 ```
 
-<img src="/assets/inde555555x.png" style="zoom:120%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/inde555555x.png" style="zoom:120%;" />
 
 ## 3.4 堆叠条形图
 
@@ -425,7 +425,7 @@ movies = {
  plt.legend((bar1,bar2),('男性平均值','女性平均值'))  //设置图例
 ```
 
-![](/assets/ind3333333333344444ex.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/ind3333333333344444ex.png)
 
 # 4. 直方图
 
@@ -469,7 +469,7 @@ movies = {
 
 ```
 
-![](/assets/indwwwwwwwwwwweqex.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/indwwwwwwwwwwweqex.png)
 
 # 5. 散点图
 
@@ -506,7 +506,7 @@ movies = {
  plt.scatter(x,y,s=10,c=y,cmap=plt.cm.Blues)
 ```
 
-<img src="/assets/indeqwert54x.png" style="zoom:120%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/indeqwert54x.png" style="zoom:120%;" />
 
 ## 5.2 回归方程
 
@@ -581,13 +581,13 @@ plt.pie(percents,labels=names,autopct="%.2f%%",explode=(0,0.05,0,0,0,0))
 plt.show()
 ```
 
-<img src="/assets/inde2333332wex.png" style="zoom:120%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/inde2333332wex.png" style="zoom:120%;" />
 
 # 7. 箱线图
 
 箱线图（Box-plot）又称为盒须图、盒式图或箱型图，是一种用作显示一组数据分散情况资料的统计图。因形状如箱子而得名。在各种领域也经常被使用，它主要用于反映原始数据分布的特征，还可以进行多组数据分布特征的比较。箱线图的绘制方法是：先找出一组数据的**上限值、下限值、中位数（Q2）和下四分位数（Q1）以及上四分位数（Q3）**；然后，连接两个四分位数画出箱子；再将最大值和最小值与箱子相连接，中位数在箱子中间。
 
-<img src="/assets/5-2222223.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/5-2222223.png" style="zoom:80%;" />
 
 ```
 //基本绘图函数
@@ -655,7 +655,7 @@ plt.xticks(range(1,6),['A','B','C','D','E'])
 plt.show()
 ```
 
-![](/assets/image-20200310173339531.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200310173339531.png)
 
 # 8. 雷达图
 
@@ -693,7 +693,7 @@ plt.show()
  plt.xticks(theta,properties)         //将刻度换成文本标签
 ```
 
-![](/assets/indeeeerqdfex.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/indeeeerqdfex.png)
 
 # 9. 辅助线
 
@@ -737,7 +737,7 @@ plt.axhspan(ymin, ymax, xmin=0-1, xmax=0-1, hold=None, **kwargs)
 
 ## 图像解剖分析
 
-![](/assets/matplotlib%E5%9B%BE%E5%83%8F%E5%89%96%E6%9E%90%E8%AF%A6%E8%A7%A3.jpg)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/matplotlib图像剖析详解.jpg)
 
 1. `Figure`：图形绘制的画板，他就相当于一个黑板，所有的图都是绘制在`Figure`上面。
 2. `Axes`：每个图都是`Axes`对象。一个`Figure`上可以有多个`Axes`对象。
@@ -800,7 +800,7 @@ for ax in fig.axes:
 
 ### 10.1.5 Figure的属性汇总
 
-![](/assets/5-2242422222r8.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/5-2242422222r8.png)
 
 ## 10.2 Axes容器
 
@@ -843,7 +843,7 @@ ax2.plot(np.random.randn(10),c="b")
 plt.show()
 ```
 
-<img src="/assets/indewr%20ww%20wex.png" style="zoom:150%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/indewr ww wex.png" style="zoom:150%;" />
 
 ## 10.3 Axis容器
 
@@ -901,7 +901,7 @@ plt.show()
 
 `Tick`是用来做刻度的，包括刻度和网格对象。其中可操作的属性如下：
 
-![](/assets/5wwrwr43-31.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/5wwrwr43-31.png)
 
 ```python
 import matplotlib.ticker as ticker
@@ -922,7 +922,7 @@ for tick in ax.yaxis.get_major_ticks():
 plt.show()
 ```
 
-![](/assets/5-334242r2.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/5-334242r2.png)
 
 # 11. 多图布局
 
@@ -951,7 +951,7 @@ example_plot(axes[1,1])
 plt.tight_layout()
 ```
 
-![](/assets/ind241ssssssssex.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/ind241ssssssssex.png)
 
 也可传入参数自定义调整：
 
@@ -970,7 +970,7 @@ ax2 = plt.subplot(223)    //分成2x2，占用第3个，即第二行第一列的
 ax3 = plt.subplot(122)   //分成1x2，占用第二个，即第二列
 ```
 
-![](/assets/5-32222226.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/5-32222226.png)
 
 但是如果实现的布局比较复杂，那么就需要采用`GridSpec`对象来实现：
 
@@ -997,7 +997,7 @@ ax5.set_title("[2,1]")
 plt.tight_layout()
 ```
 
-![](/assets/5-242342437.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/5-242342437.png)
 
 也可以设置宽高比例。示例代码如下：
 
@@ -1016,7 +1016,7 @@ for row in range(0,3):
 plt.tight_layout()
 ```
 
-![](/assets/5-312312318.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/5-312312318.png)
 
 ## 11.3 手动设置位置
 
@@ -1060,7 +1060,7 @@ for tick in ax3.yaxis.get_major_ticks():
 fig.tight_layout(h_pad=0,w_pad=0)
 ```
 
-![](/assets/5-23123139.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/5-23123139.png)
 
 # 12. Matplotlib配置
 
@@ -1086,7 +1086,7 @@ plt.rcParams['axes.prop_cycle'] = plt.cycler('color', ['r', 'y'])
 
 字体设置值对照表：
 
-![](/assets/5-4231231eww0.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/5-4231231eww0.png)
 
 
 

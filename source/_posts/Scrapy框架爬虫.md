@@ -26,7 +26,7 @@ Scrapy已经包含了协程部分，不再需要多进程多线程。
 
 **以下是爬虫框架Scrapy的工作流程：**
 
-<img src="/assets/Snipaste_2020-03-02_15-09-34.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-02_15-09-34.png" style="zoom:80%;" />
 
 1. scrapy引擎向spider获取起始Request集合,也就是spider中定义的`start_urls`。如果spider重写了`start_requests()`方法，那么这个方法返回的Request集合就是起始Request。
 2. scrapy引擎将拿到的Request发给调度中心开始调度。
@@ -92,7 +92,7 @@ scrapy genspider quto toscrape.com  //这里的toscrape.com是爬虫的目标域
 
 此时项目目录下会创建如下文件：
 
-![](/assets/Snipaste_2020-03-02_11-02-32.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-02_11-02-32.png)
 
 `spider`文件夹：
 
@@ -112,7 +112,7 @@ scrapy genspider quto toscrape.com  //这里的toscrape.com是爬虫的目标域
 
 ## 2.1 quto.py爬虫
 
-<img src="/assets/Snipaste_2020-03-02_11-33-05.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-02_11-33-05.png" style="zoom:80%;" />
 
 **写好quto.py爬虫文件代码，就可以爬取数据了：**
 
@@ -643,7 +643,7 @@ scrapy genspider -t crawl 爬虫名称 + 域
 
 生成爬虫界面是这样的
 
-![](/assets/Snipaste_2020-03-04_12-14-56.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-04_12-14-56.png)
 
 ## 3.2 Rules参数
 

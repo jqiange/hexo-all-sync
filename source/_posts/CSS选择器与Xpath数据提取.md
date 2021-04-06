@@ -60,7 +60,7 @@ print(res.getall)     //取到'标签/类/id名'所有的内容
 
 有如下`maoyan.html`文件，需要提取里面的电影名称，演员，上映时间等信息。
 
-![](/assets/Snipaste_2020-02-27_14-25-27.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20210406155343374.png)
 
 ```python
 from parsel import Selector
@@ -82,7 +82,7 @@ releasetime=sel.css('p.releasetime::text').getall()
 
 `:` 伪类选择器，通过索引选择。
 
-![](/assets/Snipaste_2020-02-27_19-17-23.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-27_19-17-23.png)
 
 ```python
 dd5=selector.css('div.main dd:nth-child(4)')   //选择第五个标签内容
@@ -161,7 +161,7 @@ XPath (XML Path Language) 是一门在 XML 文档中查找信息的语言，可�
 
 **批量提取：**url=http://music.taihe.com/artist/2517
 
-![](/assets/Snipaste_2020-02-28_13-39-58.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-28_13-39-58.png)
 
 
 
@@ -180,7 +180,7 @@ print(lis)
 
 再分析`li`标签内的内容，进行具体信息提取：
 
-![](/assets/Snipaste_2020-02-28_13-44-56.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-28_13-44-56.png)
 
 上图截取了第一个`li`标签里的所有内容
 

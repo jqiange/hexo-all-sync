@@ -47,7 +47,7 @@ typora-root-url: ..
 
 **栈**是自动分配相对固定大小的内存空间，并由系统自动释放。可以理解为客栈（固定的房间）。
 
-<img src="/assets/image-20201216191817451.png" style="zoom:67%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201216191817451.png" style="zoom:67%;" />
 
 ### 1.2.2 原始值与引用值
 
@@ -339,7 +339,7 @@ fn(1);
 
 以上执行的优先顺序理解：
 
-<img src="/assets/image-20201111220731524.png" style="zoom:120%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201111220731524.png" style="zoom:120%;" />
 
 **（2）全局的预编译**
 
@@ -354,23 +354,23 @@ fn(1);
 
 举个例子：
 
-  ![](/assets/image-20201216201800380.png)
+  ![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201216201800380.png)
 
   a函数被定义是，发生如下过程：
 
-  ![](/assets/image-20201112215403316.png)
+  ![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201112215403316.png)
 
   定义的函数a被执行时，发生如下过程：
 
-  ![](/assets/image-20201112215211763.png)
+  ![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201112215211763.png)
 
   b函数被创建时，发生如下过程：（继承了a函数的作用域）
 
-  ![](/assets/image-20201112220454635.png)
+  ![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201112220454635.png)
 
   b函数被执行时，发生如下过程：（创建的自己的AO）
 
-  ![](/assets/image-20201112220802498.png)
+  ![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201112220802498.png)
 
 ## 2.3 立即执行函数
 
@@ -434,13 +434,13 @@ obj.sex='male';
 
 在浏览器里的控制台console面板运行：
 
-![](/assets/image-20201114171046778.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201114171046778.png)
 
 
 
 增加属性：（当然在代码也也可以增加属性）
 
-![](/assets/image-20201114171211389.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201114171211389.png)
 
 
 
@@ -564,7 +564,7 @@ console.log(person.LastName)
 
 更改原型的指向：在使用new将函数Person()变对象时，默认在函数加了一行代码：`var this={__proto__:Person.prototype}`声明的原型的指向。
 
-![](/assets/image-20201115131012309.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201115131012309.png)
 
 既然这样，那么原型的指向便可以更改：
 
@@ -644,7 +644,7 @@ Person.call(obj,'cheng',200);
 
 此时obj就变成了：
 
-![](/assets/image-20201115155551827.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201115155551827.png)
 
 通过call方法，就可以让obj借用函数的属性。
 
@@ -1376,20 +1376,6 @@ Array['a','a']
 ['1cd']
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

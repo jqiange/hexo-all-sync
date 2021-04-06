@@ -45,7 +45,7 @@ sns.set()
 sinplot()  //输出如图2
 ```
 
-![](/assets/Snipaste_2020-02-22_17-50-16.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-22_17-50-16.png)
 
 使用 Seaborn 完成图像快速优化的方法非常简单。只需要将 Seaborn 提供的样式声明代码 `sns.set()` 放置在绘图前即可。
 
@@ -147,21 +147,21 @@ sns.catplot(x=, y=, kind=, data=, palette=, hue=)   //参数意义同关联图,�
 
 例：
 
-![](/assets/image-20201030224405664.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201030224405664.png)
 
 [**分类分布图：**](http://seaborn.pydata.org/tutorial/categorical.html#distributions-of-observations-within-categories)
 
 `sns.boxplot()` (`kind="box"`)：箱线图
 
-![](/assets/image-20201030224446519.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201030224446519.png)
 
 `sns.violinplot()(kind="violin")`：小提琴图
 
-![](/assets/image-20201030224536093.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201030224536093.png)
 
 `sns.boxenplot()` (`kind="boxen"`)：增强箱线图
 
-<img src="/assets/image-20201030224607358.png" style="zoom:120%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201030224607358.png" style="zoom:120%;" />
 
 
 
@@ -169,7 +169,7 @@ sns.catplot(x=, y=, kind=, data=, palette=, hue=)   //参数意义同关联图,�
 
 `sns.pointplot()`(`kind="point"`)：点线图
 
-![](/assets/image-20201030224709044.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20201030224709044.png)
 
 `sns.barplot()`(`kind="bar"`)：条形图
 
@@ -286,7 +286,7 @@ bar1.render()
 
 打开生成的render.html文件如下：
 
-![](/assets/Snipaste_2020-02-23_22-17-54.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-23_22-17-54.png)
 
 **要想直接在jupyter notebook中直接显示，可采用如下方式：**
 
@@ -300,7 +300,7 @@ bar1.render()
 
 想要对图表进行进一步的设置，则看官方文档中对应的设置部分，对于条形图Bar：
 
-![](/assets/Snipaste_2020-02-23_22-45-12.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-23_22-45-12.png)
 
 上述中`def`定义了函数名`add_yaxis`，调用格式：`Bar().add_yaxis()`，括号的可以传入的参数和用法即为在画红下划线里的那些。有等于号=的通过赋值传参，没有等于号的直接传参。
 
@@ -319,11 +319,11 @@ L.add_yaxis("商家B", [10, 25, 35, 6, 100, 70],
 L.render_notebook()
 ```
 
-![](/assets/can323132132131vvas.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/can323132132131vvas.png)
 
 上述中给商家B搞点不一样，就是**参照官方文档中的用法进行了设置。查看应用路径如下：**
 
-![](/assets/Snipaste_2020-02-23_23-22-03.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-23_23-22-03.png)
 
 
 
@@ -337,7 +337,7 @@ L.render_notebook()
 
 **全局配置项中可对这些元素进行配置：**
 
-![](/assets/57307650-8a4d0280-7117-11e9-921f-69b8e9c5e4aa.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/57307650-8a4d0280-7117-11e9-921f-69b8e9c5e4aa.png)
 
 > **全局配置项可通过 `set_global_options` 方法设置。**
 
@@ -349,11 +349,11 @@ from pyecharts import options as opts //使用 options 配置项，在 pyecharts
 
 首先找到全局配置项的那一部分，看目录，如我需要给图表加标题，则找到【TitleOpts：标题配置项】。
 
-![](/assets/Snipaste_2020-02-24_00-00-10.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-24_00-00-10.png)
 
 如我需要给图表加视觉映射，则找到【VisualMapOpts：视觉映射配置项】。
 
-![](/assets/Snipaste_2020-02-24_00-09-06.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-24_00-09-06.png)
 
 
 

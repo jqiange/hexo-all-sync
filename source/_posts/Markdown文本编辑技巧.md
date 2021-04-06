@@ -89,7 +89,7 @@ $$
 \end{matrix}
 ```
 
-![不带括号](/assets/%E4%B8%8D%E5%B8%A6%E6%8B%AC%E5%8F%B7.jpg)
+![不带括号](https://image--1.oss-cn-shenzhen.aliyuncs.com/不带括号.jpg)
 
 **带中括号**
 
@@ -102,7 +102,7 @@ $$
 
 ```
 
-![带中括号](/assets/%E5%B8%A6%E4%B8%AD%E6%8B%AC%E5%8F%B7.jpg)
+![带中括号](https://image--1.oss-cn-shenzhen.aliyuncs.com/带中括号.jpg)
 
 **带大括号**
 
@@ -114,7 +114,7 @@ $$
 $$
 ```
 
-![带大括号](/assets/%E5%B8%A6%E5%A4%A7%E6%8B%AC%E5%8F%B7.jpg)
+![带大括号](https://image--1.oss-cn-shenzhen.aliyuncs.com/带大括号.jpg)
 
 # 6. 更多
 

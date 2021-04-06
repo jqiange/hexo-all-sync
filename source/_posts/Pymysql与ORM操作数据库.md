@@ -82,7 +82,7 @@ Query OK, 0 rows affected (0.00 sec)
 
 PymySQL是在 Python3.x 版本中用于连接 MySQL 服务器的一个库。
 
-![](/assets/1559376920137.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/1559376920137.png)
 
 使用 `pip install pymysql` 可以直接安装。
 
@@ -510,7 +510,7 @@ ORM 全称 `Object Relational Mapping`, 翻译过来叫 `对象关系映射` 。
 - 掌握使用 SQLAlchemy 进行 CURD 操作；
 - 学会使用 Faker 生成测试数据
 
-![1559400744447](/assets/1559400744447.png)
+![1559400744447](https://image--1.oss-cn-shenzhen.aliyuncs.com/1559400744447.png)
 
 
 

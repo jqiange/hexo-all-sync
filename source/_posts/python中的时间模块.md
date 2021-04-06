@@ -39,7 +39,7 @@ typora-root-url: ..
 
 ## 4 时间格式化指令
 
-![](/assets/20200323.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/20200323.png)
 
 # 一、time模块
 
@@ -81,7 +81,7 @@ typora-root-url: ..
 
 ### 1.4.1 时间相互转化
 
-![](/assets/Snipaste_2020-03-23_23-42-34.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-23_23-42-34.png)
 
 
 

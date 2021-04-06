@@ -29,7 +29,7 @@ typora-root-url: ..
 
 > **深度学习——神经网络————>连接主义**
 
-![](/assets/image-20200605020413956.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200605020413956.png)
 
 > **利用仿生学的观点，用计算机仿出神经网络连接关系，让计算机具备感性思维**
 
@@ -69,7 +69,7 @@ w_{t+1}=w_t-l_r×\frac{∂loss}{∂w_t}
 $$
 学习率（lr）：当学习率设置过小时，收敛将变得十分缓慢。当过大时，梯度可能在最小值附近来回震荡，甚至可能无法收敛。
 
-![](/assets/image-20200605025338012.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200605025338012.png)
 
 指数衰减学习率：先用较大的学习率，快速得到较优的解，然后逐步减小学习率，使模型在训练后期稳定。
 
@@ -319,7 +319,7 @@ plt.show()
 
 NN层数+NN参数个数表示。
 
-<img src="/assets/image-20200606101213975.png" style="zoom:67%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200606101213975.png" style="zoom:67%;" />
 
 > 空间复杂度：
 
@@ -341,15 +341,15 @@ NN层数+NN参数个数表示。
 
 激活函数的目的：增加网络的非线性分割能力
 
-![](/assets/image-20200606104326748.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200606104326748.png)
 
-![](/assets/image-20200606104228355.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200606104228355.png)
 
 **（1）Sigmoid函数`tf.nn.sigmoid(x)`**
 $$
 f(x)=\frac{1}{1+e^{-x}}
 $$
-![](/assets/image-20200606103734586.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200606103734586.png)
 
 - 特点：
   易造成梯度消失
@@ -362,7 +362,7 @@ $$
 $$
 f(x)=\frac{1-e^{-2x}}{1+e^{-2x}}
 $$
-![](/assets/image-20200606104506328.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200606104506328.png)
 
 - 特点：
 
@@ -376,7 +376,7 @@ $$
 
 <img src="/assets/image-20200606105345922.png" style="zoom:67%;" />
 
-![](/assets/image-20200606105900451.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200606105900451.png)
 
 - 优点：
 
@@ -394,7 +394,7 @@ $$
 
 **（4）Leaky Relu函数`tf.nn.leaky_relu(x)`**
 
-![](/assets/image-20200606152404913.png) 
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200606152404913.png) 
 
 **几点认知**
 
@@ -475,7 +475,7 @@ print('结合计算的结果:\n', loss_ce2)
 
 过拟合：模型对当前数据拟合的太好了，但对未见过的新数据难以做出正确的判断，模型缺乏泛化力。
 
-![](/assets/image-20200606162013190.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200606162013190.png)
 
 - 欠拟合解决办法
 
@@ -499,7 +499,7 @@ print('结合计算的结果:\n', loss_ce2)
 
 正则化在损失函数中引入模型复杂度指标，利用给w加权值，弱化了训练数据的噪声（一般不正则化b）
 
-![](/assets/image-20200606162802978.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200606162802978.png)
 
 **正则化的选择：**
 
@@ -972,7 +972,7 @@ test_label_10000.txt   用于放置测试的图片名及其对应标签
 
 txt文本文件内容示例如下：
 
-<img src="/assets/image-20200609160339651.png" style="zoom:67%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200609160339651.png" style="zoom:67%;" />
 
 实现代码如下：
 
@@ -1060,7 +1060,7 @@ print(x_test,y_test_label)
 
 随机缩放：zoom_range=随机缩放的范围 [1-n,1+n]
 
-![](/assets/image-20200609175704555.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200609175704555.png)
 
 `model.fit(……)`更新为：
 
@@ -1280,7 +1280,7 @@ Image.NEAREST ：低质量
 
 卷积计算过程：
 
-<img src="/assets/image-20200610160153536.png" style="zoom: 80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200610160153536.png" style="zoom: 80%;" />
 
 原始图像矩阵与卷积核对应位置的像素点值进行乘运算，最后把这九个值相加，并加上偏置项1。
 
@@ -1294,11 +1294,11 @@ Receptive Field，卷积神经网络各输入特征图中的每个像素点，�
 
 #### 全零填充
 
-<img src="/assets/image-20200610161834423.png" style="zoom: 67%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200610161834423.png" style="zoom: 67%;" />
 
 在原始图像像素矩阵四周加0，使得在卷积计算过程中，输出结果图片大小与原图片一致。
 
-<img src="/assets/image-20200610162046768.png" style="zoom: 67%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200610162046768.png" style="zoom: 67%;" />
 
 以上公式表现了是否采用全零填充时，原图片与输出图片，步长，核长四者之间的关系。
 
@@ -1355,7 +1355,7 @@ model=tf.keras.models.Sequential([
 
 最大值池化可提取图片纹理，均值池化可保留背景特征。
 
-<img src="/assets/image-20200611163359181.png" style="zoom:67%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200611163359181.png" style="zoom:67%;" />
 
 **TF描述池化**
 
@@ -1387,9 +1387,9 @@ tf.keras.layers.Dropout(舍弃概率)
 
 卷积神经网络主要模块：
 
-<img src="/assets/image-20200612101346395.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200612101346395.png" style="zoom:80%;" />
 
-![](/assets/image-20200612101445935.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200612101445935.png)
 
 ### 4.2 应用
 
@@ -1487,11 +1487,11 @@ plt.show()
 
 ## 5. 经典卷积神经网络
 
-![](/assets/image-20200612145825710.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200612145825710.png)
 
 ### 5.1 LeNet
 
-![](/assets/image-20200612145921978.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200612145921978.png)
 
 LeNet神经网络结果如上，运用了：
 
@@ -1503,7 +1503,7 @@ AlexNet网络诞生于2012年，当年的ImageNet竞赛的冠军，Top5错误率
 
 *Alex Krizhevsky, Ilya Sutskever; Geoffrey E. Hinton. ImageNet Classfication with Deep Convolution Networks. In NIPS 2012.*
 
-![](/assets/image-20200612150720746.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200612150720746.png)
 
 AlexNet神经网络结果如上，运用了：
 
@@ -1515,7 +1515,7 @@ VGGNet诞生于2014年，当年ImageNet竞赛的亚军，Top5错误率减小到7
 
 *K Simonyan, A Zisserman. Very Deep Convolutional Networks for Large Scale Image RecognitionI. In NIPS 2015.*
 
-![](/assets/image-20200612151928712.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200612151928712.png)
 
 VGGNet神经网络结果如上，运用了：
 
@@ -1531,7 +1531,7 @@ VGGNet神经网络结果如上，运用了：
 
  InceptionNet的核心是它的基本单元Inception结构块，包括其后续版本，都是基于Inception结构块搭建的网络。
 
-![](/assets/image-20200612153034354.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200612153034354.png)
 
 实现代码如下：
 
@@ -1650,11 +1650,11 @@ ResNet诞生于2015年，当年ImageNet竞赛冠军，Top5错误率为3.57%。
 
 单纯叠加网络层数会使神经网络模型退化，以至于后面的特征丢失了前边特征的原本模样。
 
-<img src="/assets/image-20200612162433953.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200612162433953.png" style="zoom:80%;" />
 
 上述有效缓解了神经网络模型堆叠导致的退化，使得神经网络可以朝着更深层级的方向发展。
 
-![](/assets/image-20200612162829214.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200612162829214.png)
 
 实现代码如下：
 
@@ -1775,7 +1775,7 @@ model.summary()
 
 ### 5.6 小结
 
-![](/assets/image-20200612163538135.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200612163538135.png)
 
 ## 6. 循环神经网络RNN
 
@@ -1787,7 +1787,7 @@ model.summary()
 
 循环核具有记忆力，通过不同时刻的参数共享，实现了对时间序列的信息提取。
 
-![](/assets/image-20200612201312920.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200612201312920.png)
 
 前向传播时，记忆体内存储的状态信息h~t~，在每个时刻都被刷新，三个参数矩阵w~xh~，w~hh~，w~hy~自始至终都是固定不变的。
 
@@ -1818,7 +1818,7 @@ return_sequences=False，仅最后时间步输出ht（默认）
 
 如下图：
 
-![](/assets/image-20200615132851909.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200615132851909.png)
 
 若输入4个字母出结果，循环核时间展开步数为4。
 
@@ -2007,7 +2007,7 @@ model.fit(x_train, y_train, batch_size=32, epochs=100])
 
 传统的RNN可以通过记忆体实现短期记忆实现连续数据的预测，但是当连续的数据序列变长时，会使展开时间步变长，在反向传播更新参数时，梯度按照时间步连续相乘，会导致梯度消失，所以1997年由Hochreiter和Schmidhuber等人提出了长短记忆网络**LSTM**。
 
-![](/assets/image-20200615152345713.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200615152345713.png)
 
 **TF描述LSTM层：**
 
@@ -2157,7 +2157,7 @@ print('平均绝对误差: %.6f' % mae)
 
 GRU使记忆体ht融合了长期记忆个短期记忆。
 
-![](/assets/image-20200615154320364.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20200615154320364.png)
 
 **TF描述GRU层：**
 

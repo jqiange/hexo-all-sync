@@ -21,33 +21,33 @@ typora-root-url: ..
 
 ## 1.1 类型转变
 
-从列表：![](/assets/Snipaste_2020-02-14_17-39-46.png)
+从列表：![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_17-39-46.png)
 
-从元祖：![](/assets/Snipaste_2020-02-14_17-41-58.png)
+从元祖：![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_17-41-58.png)
 
-从字符串：![](/assets/Snipaste_2020-02-14_17-44-32.png)
+从字符串：![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_17-44-32.png)
 
 ## 1.2 从头创建
 
 ### 1.2.1 一维数组
 
-按顺序生成：<img src="/assets/Snipaste_2020-02-14_17-55-39.png" style="zoom: 80%;" />
+按顺序生成：<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_17-55-39.png" style="zoom: 80%;" />
 
 > 使用np.random模块可随机生成
 
-按等间距生成：<img src="/assets/Snipaste_2020-02-15_01-12-07.png" style="zoom:80%;" />
+按等间距生成：<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_01-12-07.png" style="zoom:80%;" />
 
-生成全为“1”数组：<img src="/assets/Snipaste_2020-02-14_17-58-56.png" style="zoom:80%;" />
+生成全为“1”数组：<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_17-58-56.png" style="zoom:80%;" />
 
-生成全为“0”数组：<img src="/assets/Snipaste_2020-02-14_18-02-02.png" style="zoom:80%;" />
+生成全为“0”数组：<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_18-02-02.png" style="zoom:80%;" />
 
-对角线全为“1”数组：<img src="/assets/Snipaste_2020-02-14_18-05-21.png" style="zoom:80%;" />
+对角线全为“1”数组：<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_18-05-21.png" style="zoom:80%;" />
 
 注意：默认生成浮点型数值，可在括号里加参数`dtype=int`，使得生成整型数值。
 
 归纳为以下：
 
-![](/assets/Snipaste_2020-02-14_18-08-33.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_18-08-33.png)
 
 ### 1.2.2 多维数组
 
@@ -55,13 +55,13 @@ typora-root-url: ..
 
 - `.reshape() `的使用：
 
-<img src="/assets/Snipaste_2020-02-14_19-40-35.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_19-40-35.png" style="zoom:80%;" />
 
 使用`.reshape()`方法可将n维数组变成任意指定形状的数组，但是元素个数要对的上。
 
 **将n维数组变成一维：**
 
-<img src="/assets/Snipaste_2020-02-14_20-14-20.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_20-14-20.png" style="zoom:80%;" />
 
 **将一维行数据数据变成列数据：**
 
@@ -84,7 +84,7 @@ array([[0],
 
 - `size()`的使用：
 
-<img src="/assets/Snipaste_2020-02-14_21-04-13.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_21-04-13.png" style="zoom:80%;" />
 
 ### 1.2.3 np.random模块
 
@@ -119,7 +119,7 @@ array([[0],
 
 使用以上方法不需要加括号。
 
-举一个例子：<img src="/assets/Snipaste_2020-02-14_19-59-50.png" style="zoom:80%;" />
+举一个例子：<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_19-59-50.png" style="zoom:80%;" />
 
 
 
@@ -131,11 +131,11 @@ array([[0],
 
 位置索引：
 
-<img src="/assets/Snipaste_2020-02-14_20-28-10.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_20-28-10.png" style="zoom:80%;" />
 
 布尔索引：
 
-<img src="/assets/Snipaste_2020-02-14_20-49-58.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_20-49-58.png" style="zoom:80%;" />
 
 
 
@@ -143,71 +143,71 @@ array([[0],
 
 选取数据：
 
-<img src="/assets/Snipaste_2020-02-15_00-25-31.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_00-25-31.png" style="zoom:80%;" />
 
 选择块：
 
-<img src="/assets/Snipaste_2020-02-15_00-40-09.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_00-40-09.png" style="zoom:80%;" />
 
 
 
-<img src="/assets/Snipaste_2020-02-15_12-07-29.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_12-07-29.png" style="zoom:80%;" />
 
 调换行：
 
-<img src="/assets/Snipaste_2020-02-15_00-31-45.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_00-31-45.png" style="zoom:80%;" />
 
 ## 2.2 切片
 
 连续的切片：
 
-<img src="/assets/Snipaste_2020-02-14_20-41-33.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_20-41-33.png" style="zoom:80%;" />
 
 不连续的切片：
 
-<img src="/assets/Snipaste_2020-02-14_20-46-01.png"  style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_20-46-01.png"  style="zoom:80%;" />
 
 ## 2.3 值的替换
 
 根据索引赋值
 
-<img src="/assets/Snipaste_2020-02-14_21-01-18.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_21-01-18.png" style="zoom:80%;" />
 
 ## 2.4 数组拼接
 
-![](/assets/Snipaste_2020-02-14_21-36-03.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_21-36-03.png)
 
 ## 2.5 数组切割
 
 ### 2.5.1 普通切割
 
-![](/assets/Snipaste_2020-02-14_22-03-42.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_22-03-42.png)
 
 ### 2.5.2 复杂切割
 
-![](/assets/Snipaste_2020-02-14_22-06-11.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-14_22-06-11.png)
 
 ## 2.6 数组运算
 
 ### 2.6.1 通用函数
 
-![](/assets/Snipaste_2020-02-15_00-44-07.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_00-44-07.png)
 
 
 
-![](/assets/Snipaste_2020-02-15_00-44-29.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_00-44-29.png)
 
 **注意：这里的逻辑运算如逻辑与np.logical_and()是进行多元运算的。括号里传入的数组必须形状相同。**
 
-![](/assets/Snipaste_2020-02-15_00-45-07.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_00-45-07.png)
 
 NAN安全版本：为了应对数组里的缺失值`np.nan`的。如下：
 
-<img src="/assets/Snipaste_2020-02-15_12-26-15.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_12-26-15.png" style="zoom:80%;" />
 
 ### 2.6.2 布尔数组函数
 
-![](/assets/Snipaste_2020-02-15_00-55-07.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_00-55-07.png)
 
 对传入的数组进行是否有空值判断。传入的数组也可以为布尔数组。只能进行一元判断。
 
@@ -215,13 +215,13 @@ NAN安全版本：为了应对数组里的缺失值`np.nan`的。如下：
 
 ### 2.7.1 普通排序
 
-![](/assets/Snipaste_2020-02-15_01-03-47.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_01-03-47.png)
 
 如要 降序 排列，只需传入负号即可：`np.sort(-arr)`。
 
 ### 2.7.2 排序并返回唯一值
 
-<img src="/assets/Snipaste_2020-02-15_01-23-06.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_01-23-06.png" style="zoom:80%;" />
 
 对传入的数组中的元素排序，并返回对应元素出现的个数。
 
@@ -231,7 +231,7 @@ NAN安全版本：为了应对数组里的缺失值`np.nan`的。如下：
 
 举例说明：
 
-<img src="/assets/Snipaste_2020-02-15_01-29-58.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_01-29-58.png" style="zoom:80%;" />
 
 # 3. 文件操作
 
@@ -261,7 +261,7 @@ np.loadtxt(frame, dtype=np.float, delimiter=None, unpack=False)
 
 **保存和读取文件举例：**
 
-![](/assets/Snipaste_2020-02-15_16-26-28.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_16-26-28.png)
 
 注意这里的 `skiprows=1` 的意思是忽略第一行数据。
 
@@ -278,7 +278,7 @@ np.loadtxt(frame, dtype=np.float, delimiter=None, unpack=False)
 
 简单来说， **最外面的括号代表着 axis=0，依次往里的括号对应的 axis 的计数就依次加 1**：
 
-![](/assets/1-1581749184285.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/1-1581749184285.png)
 
  **操作方式：如果指定轴进行相关的操作，那么他会使用轴下的每个直接子元素的第0个，第1个，第2个...分别进行相关的操作。**
 
@@ -312,11 +312,11 @@ array([[0, 4, 2, 5, 2],
 
 **三维数组：**
 
-<img src="/assets/2-1581750404175.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/2-1581750404175.png" style="zoom:80%;" />
 
-按照`axis=0`的方式进行相加：![](/assets/3-1581750466746.png)
+按照`axis=0`的方式进行相加：![](https://image--1.oss-cn-shenzhen.aliyuncs.com/3-1581750466746.png)
 
-按照`axis=1`的方式进行相加：![](/assets/4-1581750497037.png)
+按照`axis=1`的方式进行相加：![](https://image--1.oss-cn-shenzhen.aliyuncs.com/4-1581750497037.png)
 
 ## 4.2 NAN和INF值处理
 
@@ -332,11 +332,11 @@ array([[0, 4, 2, 5, 2],
 
 **删除缺失值：**
 
-<img src="/assets/Snipaste_2020-02-15_15-36-25.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_15-36-25.png" style="zoom:80%;" />
 
 **替换缺失值：**
 
-![](/assets/Snipaste_2020-02-15_16-34-56.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_16-34-56.png)
 
 打开表格`scores.csv`可看到如下表格：
 
@@ -353,7 +353,7 @@ array([[0, 4, 2, 5, 2],
 
 替换缺失值为0：
 
-![](/assets/Snipaste_2020-02-15_16-37-04.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_16-37-04.png)
 
 ## 4.3 深浅拷贝
 
@@ -395,7 +395,7 @@ print(a[0]) #打印0，说明d和a指向的内存空间完全不同了。
 
 **图例说明：**
 
-![](/assets/Snipaste_2020-02-15_16-54-54.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_16-54-54.png)
 
 
 
@@ -411,11 +411,11 @@ print(a[0]) #打印0，说明d和a指向的内存空间完全不同了。
 
 **读取图片并将其转化成数组数据：**
 
-<img src="/assets/Snipaste_2020-02-15_17-38-39.png" style="zoom: 80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_17-38-39.png" style="zoom: 80%;" />
 
 **处理数组数据并还原成图片：**
 
-<img src="/assets/Snipaste_2020-02-15_17-44-07.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-02-15_17-44-07.png" style="zoom:80%;" />
 
 
 

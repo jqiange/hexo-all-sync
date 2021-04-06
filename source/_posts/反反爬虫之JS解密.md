@@ -24,33 +24,33 @@ typora-root-url: ..
 
 在【XHR】过滤后，可看到【Js】传来的数据：
 
-![Snipaste_2020-03-24_10-20-51](/assets/Snipaste_2020-03-24_10-20-51.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_10-20-51.png)
 
-在【Headers】里可以看到请求的【url，请求方式】：![Snipaste_2020-03-24_10-23-37](/assets/Snipaste_2020-03-24_10-23-37.png)
+在【Headers】里可以看到请求的【url，请求方式】：![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_10-23-37.png)
 
 再往下翻，可以看到发送的表单数据：
 
-![](/assets/Snipaste_2020-03-24_10-25-34.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_10-25-34.png)
 
 这里面是重点！
 
 重新输入翻译内容，再对比看看两份表单数据：
 
-![](/assets/Snipaste_2020-03-24_10-28-53.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_10-28-53.png)
 
 以上红框里四个参数是关键，需要搞清楚它是怎么产生的。
 
 【ctrl+f】打开搜索框，搜索【salt】参数
 
-![](/assets/Snipaste_2020-03-24_10-37-46.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_10-37-46.png)
 
 搜到了【fanyi.min.js】，这就说明【salt】【sign】【ts】【bv】可能是在这里面产生的。
 
-![](/assets/Snipaste_2020-03-24_10-43-48.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_10-43-48.png)
 
 显示内容：
 
-![](/assets/Snipaste_2020-03-24_10-45-38.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_10-45-38.png)
 
 为了便于分析查找，将【fanyi.min.js】数据复制到pycharm里。
 
@@ -58,29 +58,27 @@ typora-root-url: ..
 
 【ctrl+f】打开搜索框，搜索【translate_o】关键词
 
-因为这是数据传输的url：【Request URL: 
-
-==http://fanyi.youdao.com/translate_o?smartresult=dict&smartresult=rule==】
+因为这是数据传输的url：【Request URL: ==http://fanyi.youdao.com/translate_o?smartresult=dict&smartresult=rule==】
 
 找到：
 
-![](/assets/Snipaste_2020-03-24_10-55-15.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_10-55-15.png)
 
 这里面的（data: e）中的e是指查询或者说翻译参数，用户需要翻译的值。这个数据在函数c(e,t)里处理，故先ctrl+鼠标左键，点击函数名c进入：
 
-<img src="/assets/Snipaste_2020-03-24_11-08-55.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_11-08-55.png" style="zoom:80%;" />
 
 可以看到我们需要的参数【salt】【sign】【ts】【bv】这些参数都跟r有关，ctrl+鼠标左键，点击r进入：
 
-<img src="/assets/Snipaste_2020-03-24_11-11-39.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_11-11-39.png" style="zoom:80%;" />
 
 可以看到，r是由v.generateSaltSign(n)产生的，ctrl+鼠标左键，点击进入：
 
-![](/assets/Snipaste_2020-03-24_11-14-25.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_11-14-25.png)
 
 可以看到，generateSaltSign是由r产生的，ctrl+鼠标左键，点击r进入：
 
-![](/assets/Snipaste_2020-03-24_11-16-45.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_11-16-45.png)
 
 由此终于可以看到【ts】【bv】【sign】【salt】是怎么来的了。
 
@@ -202,7 +200,7 @@ pip install PyExecJS
 
 在pycharm中安装插件Node.js：
 
-![](/assets/Snipaste_2020-03-24_13-29-37.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_13-29-37.png)
 
 尝试运行：
 
@@ -215,7 +213,7 @@ hello
 
 如果提示没有编译器，则按下面配置：
 
-![](/assets/Snipaste_2020-03-24_13-37-20.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_13-37-20.png)
 
 ## 2.3 复制JS代码
 
@@ -223,17 +221,17 @@ hello
 
 在pycharm里新建【JavaScript file】，命名为【fanyi.js】，把数据复制进去。
 
-![](/assets/Snipaste_2020-03-24_13-46-28.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_13-46-28.png)
 
 这里面用到了n.md5函数，ctrl+鼠标左键，点击函数名找到位置：
 
-![](/assets/Snipaste_2020-03-24_13-56-54.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_13-56-54.png)
 
 找到md5之后，发现里面的还有h(e),f(e)等函数，不可直接复制md5函数里的内容，应该向上找，找到包含md5的完整函数。
 
 按缩进判断函数体：
 
-![](/assets/Snipaste_2020-03-24_14-00-27.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_14-00-27.png)
 
 然后将断点之间的代码都复制到【fanyi.js】：
 
@@ -307,7 +305,7 @@ ReferenceError: navigator is not defined
 
 在console中输入navigator，可得到数据：
 
-![](/assets/Snipaste_2020-03-24_14-25-13.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_14-25-13.png)
 
 将navigator的参数以字典的形式添加到到代码中（其实只是需要键名为appVersion的值，即浏览器的UA）再运行：
 
@@ -328,7 +326,7 @@ var r = function (e) {……};
 
 变量名r与之前的重复了，改掉就好。
 
-![](/assets/Snipaste_2020-03-24_14-32-47.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-24_14-32-47.png)
 
 ```
 {
@@ -377,7 +375,7 @@ print(result)
 
 ### 3.2.1 JS压缩
 
-![](/assets/image-20191225190455160.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20191225190455160.png)
 
 特点：把JS代码写在一起。让你难以阅读，难以破解
 
@@ -397,7 +395,7 @@ js中的 eval() 方法就是一个 js 语言的执行器，它能把其中的参
 
 最明显的特征是生成的代码以`eval(function(p,a,c,k,e,r))`开头。
 
-<img src="/assets/image-20191225190543248.png" style="zoom:100%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20191225190543248.png" style="zoom:100%;" />
 
 **原理：**
 
@@ -417,7 +415,7 @@ http://dean.edwards.name/packer/
 
 **特征：**
 
-![](/assets/image-20191225190622791.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20191225190622791.png)
 
 **原理：**
 用户访问客户端，客户端向服务器请求获取一个RSA公钥以及键值key，存储在本地
@@ -432,7 +430,7 @@ http://travistidwell.com/jsencrypt/
 
 **特征：**
 
-![](/assets/image-20191225190656223.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20191225190656223.png)
 
 **原理**
 
@@ -543,7 +541,7 @@ console.log(test(10));
 
 **特征：**
 
-![](/assets/image-20191225190724159.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20191225190724159.png)
 
 **原理：**
 jsfuck源于一门编程语言brainfuck，其主要的思想就是只使用8种特定的符号来编写代码。而jsfuck

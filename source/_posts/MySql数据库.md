@@ -42,15 +42,15 @@ typora-root-url: ..
 ### 1.1.2 安装
 
 **建议自定义安装，如下：**
-<img src="/assets/Snipaste_2020-03-05_11-32-45.png" style="zoom: 67%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-05_11-32-45.png" style="zoom: 67%;" />
 
 **选择模块：**
 
-<img src="/assets/Snipaste_2020-03-05_11-40-02.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-05_11-40-02.png" style="zoom:80%;" />
 
 **自定义安装路径：**
 
-<img src="/assets/Snipaste_2020-03-05_11-41-05.png"  style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-05_11-41-05.png"  style="zoom:80%;" />
 
 **接下来一直next就行。**
 
@@ -60,11 +60,11 @@ typora-root-url: ..
 
 **找到环境变量设置入口：**
 
-<img src="/assets/Snipaste_2020-03-05_11-48-00.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-05_11-48-00.png" style="zoom:80%;" />
 
 **将Mysql安装路径加入到环境变量中：**
 
-<img src="/assets/Snipaste_2020-03-05_11-49-50.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-05_11-49-50.png" style="zoom:80%;" />
 
 
 
@@ -192,7 +192,7 @@ mysql -uroot -p   //启动时会提示输入密码
 
 由于已经配置了环境变量，直接输入上述命令即可。如没有配置，需要cd到其安装目录才能执行启动命令。
 
-<img src="/assets/Snipaste_2020-03-05_11-54-52.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-05_11-54-52.png" style="zoom:80%;" />
 
 **查看已有数据库：**
 
@@ -200,11 +200,11 @@ mysql -uroot -p   //启动时会提示输入密码
  show databases;
 ```
 
-![](/assets/Snipaste_2020-03-05_12-02-39.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-05_12-02-39.png)
 
 **创建，使用及退出：**
 
-![](/assets/Snipaste_2020-03-05_12-04-58.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-05_12-04-58.png)
 
 注意这里的quit并没有真正退出，后台还有mysql服务存在。
 
@@ -218,11 +218,11 @@ mysql -uroot -p   //启动时会提示输入密码
 
 **打开连接界面：**
 
-![](/assets/Snipaste_2020-03-05_12-17-06.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-05_12-17-06.png)
 
 **进行连接：**
 
-![](/assets/Snipaste_2020-03-05_12-21-17.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-05_12-21-17.png)
 
 **测试连接时，如出现错误Server returns invalid timezone……**
 
@@ -232,7 +232,7 @@ mysql -uroot -p   //启动时会提示输入密码
 show variables like '%time_zone%';
 ```
 
-![](/assets/Snipaste_2020-03-05_12-25-06.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-05_12-25-06.png)
 
 这里的SYSTEM默认时的美国时间。
 
@@ -240,7 +240,7 @@ show variables like '%time_zone%';
 
 ①
 
-<img src="/assets/Snipaste_2020-03-05_12-27-20.png" style="zoom:80%;" />
+<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-05_12-27-20.png" style="zoom:80%;" />
 
 ②在mysql的命令模式下，CMD下输入：
 
@@ -252,7 +252,7 @@ mysql>  set global time_zone='+8:00';
 
 尝试使用命令：
 
-![Snipaste_2020-03-05_13-38-54](/assets/Snipaste_2020-03-05_13-38-54.png)
+![Snipaste_2020-03-05_13-38-54](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-05_13-38-54.png)
 
 
 
@@ -291,7 +291,7 @@ create table maoyan(
 desc maoyan;     //查看表结构
 ```
 
-![](/assets/Snipaste_2020-03-05_14-13-14.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-05_14-13-14.png)
 
 **删除数据表**
 
@@ -305,7 +305,7 @@ drop table if exists 表名;
 alter table maoyan modify column score char(3);
 ```
 
-![](/assets/Snipaste_2020-03-05_14-24-26.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-05_14-24-26.png)
 
 **增加新字段**
 
@@ -313,7 +313,7 @@ alter table maoyan modify column score char(3);
 alter table maoyan add column star varchar(50);
 ```
 
-![](/assets/Snipaste_2020-03-05_14-27-47.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-05_14-27-47.png)
 
 **删除字段**
 
@@ -824,7 +824,7 @@ AND	 OR	 NOT
 select * from maoyan where film_name ='龙猫';
 ```
 
-结果如下（pycharm环境下）![](/assets/Snipaste_2020-04-05_20-57-50.png)
+结果如下（pycharm环境下）![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-04-05_20-57-50.png)
 
 ### 4.2.1 模糊查询
 
@@ -873,7 +873,7 @@ order by salary DESC; -- DESC：降序，ASC:升序，默认为 ASC
 select * from maoyan order by scores;
 ```
 
-![](/assets/Snipaste_2020-04-05_22-39-48.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-04-05_22-39-48.png)
 
 ### 多重排序标准
 
@@ -1038,7 +1038,7 @@ select *, if(scores<9,'低','高') level from maoyan;
 
 如下：新增了一列"level"
 
-![](/assets/Snipaste_2020-04-05_23-41-18.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-04-05_23-41-18.png)
 
 ```sql
 //多层嵌套写法：

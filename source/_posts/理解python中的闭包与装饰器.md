@@ -227,7 +227,7 @@ print(values)
 
 执行 `values[1]=values` 的时候，**Python 做的事情则是把 values 这个标签所引用的列表对象的第二个元素指向 values 所引用的列表对象本身。**执行完毕后，values 标签还是指向原来那个对象。列表的第2个值又指向列表本身，就这样循环嵌套。
 
-![](/assets/Snipaste_2020-03-21_20-56-36.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/Snipaste_2020-03-21_20-56-36.png)
 
 为了避免以上的情况，可使用如下方法：
 
