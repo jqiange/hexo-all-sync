@@ -97,7 +97,7 @@ categories: 工具
 [http://blog.liuxianan.com/windows-port-bind.html](http://blog.liuxianan.com/windows-port-bind.html)
 
 第一次初始化的时候hexo已经帮我们写了一篇名为 Hello World 的文章，默认的主题比较丑，打开时就是这个样子：
-![](https://image--1.oss-cn-shenzhen.aliyuncs.com/qweqw eqweqw3432423432.png)
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/qweqweqw3432423432.png)
 
 ## 4.2 修改主题
 既然默认主题很丑，那我们别的不做，首先来替换一个好看点的主题。这是 [官方主题](https://hexo.io/themes/)。
