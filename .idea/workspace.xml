@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84529360-df78-44be-9159-18e9001482a4" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/themes/3-hexo/layout/在此index.md配置首页.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/3-hexo/source/img/497147edc274d2c1743a2626be244a7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/3-hexo/source/img/jqiange.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/3-hexo/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/3-hexo/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/3-hexo/layout/indexs.md" beforeDir="false" afterPath="$PROJECT_DIR$/themes/3-hexo/layout/indexs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/linux常见命令学习.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/linux常见命令学习.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,16 +10,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/3-hexo" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XhUgJYwPqCc85CeF2mEx75Nd3G" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="D:/python_work" />
@@ -34,6 +30,7 @@
       <recent name="D:\Hexo\node_modules\hexo-generator-index\lib" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>

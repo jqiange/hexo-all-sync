@@ -811,7 +811,9 @@ echo $#
 
 <img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20210406112941373.png" style="zoom:100%;" align='left'/>
 
-## 5.3 一些shell脚本中常用的命令
+
+
+# 5.3 一些shell脚本中常用的命令
 
 ### 5.3.1 cat
 

@@ -86,7 +86,7 @@ menu:
 # 文末声明
 article_txt: 欢迎各位看官及技术大佬前来交流指导呀，可以邮件至 jqiange@yeah.net
 
-bottom_text: ©2016-2021 Jqiange
+bottom_text: ©2016-2020 Jqiange
 # 自定义页面最下方的站点版权信息
 # 如果不填，则自定义为 ©2017 author (这个author为hexo根目录_config.yml中配置的)
 
@@ -100,7 +100,7 @@ miit:
 reward: false
 # true 开启打赏功能
 
-searchAll: false
+searchAll: true
 # true 启用全文搜索
 # 开启此功能需要下面操作：
 # 1. 在 hexo 根目录 执行 npm install hexo-generator-search --save 安装插件
@@ -180,9 +180,8 @@ code:
 # github: github样式（灰色底，黑字）
 
 highlight:
-  on: true # true开启代码高亮，开启需要关闭博客 _config.yml 中的 highlight
+  on: true # true开启代码高亮
   lineNum: false # true显示行号
-  copy: true # 复制功能
   theme: atom-light
 # 代码高亮主题,效果可以查看 https://highlightjs.org/static/demo/
 # 支持主题：

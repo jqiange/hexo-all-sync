@@ -36,30 +36,6 @@
       line-height 19px
       &:hover
         color #309e85
-      &.rss:before
-        content "\ea9b"
-      &.github:before
-        content "\eab0"
-      &.twitter:before
-        content "\ea96"
-      &.weibo:before
-        content "\ea9a"
-      &.linkedin:before
-        content "\eac9"
-      &.instagram:before
-        content "\ea92"
-      &.email:before
-        content "\e945"
-      &.facebook:before
-        content "\ea91"
-      &.reddit:before
-        content "\eac6"
-      &.qq:before
-        content "\e626"
-      &.neteasemusic:before
-        content "\e607"
-      &.kugou:before
-        content "\e6ce"
 
   ul
     margin 0
@@ -92,6 +68,8 @@
         color rgba(255,255,255,0.7)
         transition all .15s linear
         position relative
+        white-space nowrap
+        overflow hidden
         &:hover
           color #f7f7f7
           box-shadow inset 6px 0 0 #fff
@@ -112,9 +90,10 @@
     border-collapse collapse
     bottom 0
     width 100%
-    font-size 17px
+    font-size 0
     color rgba(255,255,255,0.7)
     a
+      font-size 17px
       display table-cell
       height 30px
       text-align center
@@ -126,7 +105,7 @@
         display: inline-block
         &.hasFriend
           border-right 1px solid #fff
-          width 49%
+          width calc(49% - 1px)
       &.friends
         display: inline-block
       &.dynamic-menu
