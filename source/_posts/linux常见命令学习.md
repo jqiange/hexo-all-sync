@@ -536,7 +536,9 @@ sudo apt-get remove 软件包名
 >
 > apt 具有更精减但足够的命令选项，而且参数选项的组织方式更为有效。
 
-#### 详解wget,apt-get,yum,rpm区别
+
+
+**详解wget,apt-get,yum,rpm区别**
 
 （1）wget是一个下载命令，名字是World Wide Web与get的结合
 
@@ -782,21 +784,20 @@ echo $3
 
 运行此程序：
 
-<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20210406110909691.png" style="zoom:80%;" align='left'/>
-
-由此可见，
-
-$0代表文件名
-
-$1代表传入的第1个参数
-
-$2代表传入的第2个参数
+```
+>> sh test.sh num1 num2
+test.sh                        # 这个就是$0, 代表文件名
+num1                           # 这个就是$1, 传入的第1个参数
+num2                           # 这个就是$2, 传入的第2个参数
+                               
+```
 
 另外，shell还有另外三个位置变量：
 
 - $* 所有传入的参数列表
 - $@ 所有传入的参数列表，同上
 - $# 传入参数的个数
+- $? 返回该命令退出时的状态。0表示没有错误，其他任何值代表有错误。
 
 示例：
 
@@ -809,7 +810,13 @@ echo $#
 
 运行结果：
 
-<img src="https://image--1.oss-cn-shenzhen.aliyuncs.com/image-20210406112941373.png" style="zoom:100%;" align='left'/>
+```
+>> sh test.sh num1 num2
+num1 num2
+num1 num2
+2
+```
+
 
 
 

@@ -1,5 +1,4 @@
 ---
-
 title: 使用Hexo+Github搭建个人免费博客
 date: 2020-02-13 15:44:02
 top:
@@ -32,7 +31,7 @@ categories: 工具
  - 安装hexo
 > a. 先创建一个文件夹（用来存放所有blog的东西），然后`cd`到该文件夹下。
 > b. 安装hexo命令：`$ npm i -g hexo` 
-> c. 初始化命令：`$ hexo init` 
+> c. 初始化命令：
 > `$ cd /f/Workspaces/hexo/`  
 > `$ hexo init`
 > 初始化完成之后打开所在的文件夹可以看到以下文件： 
@@ -77,7 +76,7 @@ categories: 工具
 
 ## 3.1 测试是否成功
 
-    $ ssh -T git@github.com # 注意邮箱地址不用改
+    $ ssh -T git@github.com -i ~/.ssh/id_rsa    # 注意邮箱地址不用改
 如果提示`Are you sure you want to continue connecting (yes/no)?`，输入yes，然后会看到：
 
 > Hi liuxianan! You’ve successfully authenticated, but GitHub does not provide shell access.
@@ -179,21 +178,23 @@ categories: 工具
 定位到我们的hexo根目录，执行命令：
 
     hexo new 'my-first-blog'
-hexo会帮我们在`_posts`下生成相关.md文件
+    #hexo n 'my-first-blog'
+hexo会帮我们在`_posts`目录下生成同名.md文件
 
 我们只需要打开这个文件就可以开始写博客了
 
-注意：这里的.md文件是根据scaffolds里的post文件为模板生成的。
+> 注意：这里的.md文件是根据scaffolds目录里的post.md文件为模板生成的。
+>
 
 一般完整格式如下：
 
-      ---
-        title: postName #文章页面上的显示名称，一般是中文
-        date: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改
-        categories: 默认分类 #分类
-        tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格
+    ---
+        title: postName               #创建的文章名称，
+        date: 2013-12-02 15:30:16     #文章生成时间，一般不改，当然也可以任意修改
+        categories:                   #分类，可以在模板中设置默认值
+        tags: [tag1,tag2,tag3]        #文章标签，可空，多标签请用格式，注意:后面有个空格
         description: 附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面
-        ---
+    ---
         
         以下是正文
 
@@ -201,5 +202,7 @@ hexo会帮我们在`_posts`下生成相关.md文件
 
 ```
 $ hexo s -g   #生成并本地预览
+
 $ hexo d -g   #生成并部署到Github
 ```
+

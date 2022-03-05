@@ -9,4 +9,6 @@ typora-root-url: ..
 <center><font size=5 face="黑体">世人笑我太疯癫，我笑世人看不穿。</font></center>
 
 
-![](/assets/zhou.gif)
+
+![](https://image--1.oss-cn-shenzhen.aliyuncs.com/zhou.gif)
+
