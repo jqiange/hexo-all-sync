@@ -100,17 +100,23 @@ Git 仓库一共分为4个区：**工作区；暂存区；本地仓库，远程�
 
 信息保存位置：./.gitconfig 文件
 
-### 3.1.3 添加远程仓库
+### 3.1.3 添加和查看远程仓库
 
-`git remote add origin 远程仓库地址.git`  这里origin是给远程仓库取的别名
+添加远程仓库：
 
-`git remote`可显示远程仓库的别名
+- `git remote add origin 远程仓库地址.git`     这里origin是给远程仓库取的别名
 
-若已有设置远程仓库：
+修改远程仓库：
 
-`git remote -v`可显示远程仓库的地址
+- `git remote set-url origin  新仓库地址` 可修改远程仓库地址
 
-`git remote set-url origin  新仓库地址` 可修改远程仓库地址
+显示远程仓库
+
+- `git remote `可显示远程仓库的别名
+
+- `git remote -v`可显示远程仓库的地址
+
+
 
 ### 3.1.4 保存并上传文件
 
@@ -134,11 +140,9 @@ Git 仓库一共分为4个区：**工作区；暂存区；本地仓库，远程�
 
    把当前分支master推送到远程master分支，-u会把本地master分支和远程master分支关联起来。下一次再提交的话就可以省略-u。
 
-   推送到分支
+切换到分支zs：`git checkout zs`
 
-   切换到分支zs：`git checkout zs`
-
-   推送分支：`git push -u origin zs`
+推送分支：`git push -u origin zs`
 
 ### 3.1.5 忽略文件
 
@@ -152,31 +156,9 @@ Git 仓库一共分为4个区：**工作区；暂存区；本地仓库，远程�
 
 `git log`         查看提交日志
 
-### 3.1.7 版本回退
 
-> 只能回退到commit过的版本
 
-当前版本往上回退一个版本：`git reset --hard HEAD^`
-
-回退n个版本：`git reset --hard HEAD~n`
-
-通过id回退：`git reset --hard commit_id`
-
-回退之后又想恢复到最新版本：`git reflog `查看每一次记录，通过id回退。
-
-`git reflog --date=iso`查看每次commit记录并显示时间。
-
----------------------------
-
-**git中的HEAD理解**：HEAD代表当前指针的意思，它是git内部用来追踪位置的，形象的记忆就是：你在哪，HEAD就指向哪。
-
-上面加`--hard`的意思是：同时恢复到暂存区和工作区（工作区的新文件会被旧文件替代）；
-
-加不加`--head`的区别：不加`--head`，在恢复的时候只恢复到暂存区。
-
-`--soft` 和 `--hard `的区别：`--hard `会清空工作目录和暂存区的改动，而 `--soft`则会保留工作目录的内容，并把因为保留工作目录内容所带来的新的文件差异放进暂存区。
-
-### 3.1.8 本地误删恢复
+### 3.1.7 本地误删恢复
 
 > 只有被commit后的文件才能被恢复，若文件只是add到暂存区，则不能恢复。
 
@@ -191,7 +173,7 @@ git checkout filename
 
 这里举一个**例子**：文件1被add和commit；文件1在工作区被修改为文件2，文件2只是被add，忘记commit了，然后文件2被修改为文件3，此时又觉得文件3写了一半觉得不好，想回退到文件2，于是执行git reset --head HEAD，则工作区代码直接回退到文件1（因为本地仓库只记住了代码1的样子，回到当前代码，就是代码1了），代码2就永久消失了。
 
-### 3.1.9 分支管理
+### 3.1.8 分支管理
 
 每个开发者都可以有一个分支。通常还有div分支以及master分支。git所有分支之间彼此互不干扰，各自完成各自的工作和内容。可以在分支使用完后**合并到总分支(原分支)** 上，安全、便捷、不影响其他分支工作。
 
@@ -347,10 +329,93 @@ git reset --hard origin/master
 
    `git push origin master`
 
-
 即可大功告成！
 
-# 3、深入阅读
+## 3.4 版本回退
+
+Git提供了两种版本回退命令：
+
+- git reset ：如果想恢复到之前某个提交的版本，且那个版本之后提交的版本我们都不要了，就可以用这种方法。
+- git revert：如果我们想撤销之前的某一版本，但是又想保留该目标版本后面的版本，记录下这整个版本变动流程，就可以用这种方法。
+
+> 只能回退到commit过的版本
+
+### 3.4.1 git reset
+
+当前版本往上回退一个版本：`git reset --hard HEAD^`
+
+回退n个版本：`git reset --hard HEAD~n`
+
+通过id回退：`git reset --hard commit_id`
+
+回退之后又想恢复到最新版本：`git reflog `查看每一次记录，通过id回退。
+
+`git reflog --date=iso`查看每次commit记录并显示时间。
+
+---------------------------
+
+**git中的HEAD理解**：HEAD代表当前指针的意思，它是git内部用来追踪位置的，形象的记忆就是：你在哪，HEAD就指向哪。
+
+上面加`--hard`的意思是：同时恢复到暂存区和工作区（工作区的新文件会被旧文件替代）；
+
+加不加`--head`的区别：不加`--head`，在恢复的时候只恢复到暂存区。
+
+`--soft` 和 `--hard `的区别：`--hard `会清空工作目录和暂存区的改动，而 `--soft`则会保留工作目录的内容，并把因为保留工作目录内容所带来的新的文件差异放进暂存区。
+
+**正式的流程如下：**
+
+```
+git reflog                      #查看commit记录，找到想要回退到的commit id
+git reset --hard commit_id      #回退本地仓库
+git push origin master -f       #强制push到远程
+```
+
+如果git push不加-f，会显示current branch is behind，导致失败。所以需要-f强制push。
+
+但是，如果远程仓库是【protected】，则可能会 not allowed force push。
+
+这时候可以到项目的Settings页面下找到Protected Branches，有如下两种解决方法
+
+1. 可以直接点该分支旁的Unprotect按钮，解除保护，但是这种方法不推荐
+2. 第二种方法是在Allowed to push下选择允许那些角色或具体那些用户可以提交，在这里可以选择你自己
+
+### 3.4.2 git revert
+
+**正式的流程如下：**
+
+```
+git reflog                      #查看commit记录，找到想要回退到的commit id
+git revert -n commit_id         #反做版本号为commit_id的版本
+```
+
+这里可能会出现冲突，那么需要手动修改冲突的文件。冲突解决后，接着：
+
+```
+git add yyy
+git commit -m 'revert xxx'
+git push origin master
+```
+
+即可。
+
+## 3.5 指定commit进行push
+
+有时候，我们会需要将某个特定的commit，将其push到其他分支，这时候就需要用到``git cherry-pick ``命令：
+
+```shell
+git log -3 --graph master   # 查看当前分支下的提交记录，-3是看前3条
+git checkout 2022.05        # 切换到2022.05分支
+git branch                  # 查看当前所处分支
+git cherry-pick commit_id   # 指定的commit_id就被合并到2022.05分支
+git pull --rebase           # 解决冲突
+git push origin 2022.05     # push到2022.05 branch
+```
+
+
+
+
+
+# 4、深入阅读
 
 [这才是真正的Git——Git内部原理 - LZANE | 李泽帆（靓仔）](https://www.lzane.com/tech/git-internal/)
 
